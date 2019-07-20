@@ -71,9 +71,20 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "footer" }
           - { label: "Title", name: "title", widget: "string", required: true}
-      - file: "src/data/pages/footer/index.md"
-        label: "Footer"
-        name: "footer"
+      - file: "src/data/pages/header/index.md"
+        label: "Header"
+        name: "header"
         fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "footer" }
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "header" }
           - { label: "Title", name: "title", widget: "string", required: true}
+          - { label: "Subtitle", name: "subTitle", widget: "string", required: true}
+          - {
+              label: "Header image",
+              name: "headerImage",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" }
+                ],
+             }
