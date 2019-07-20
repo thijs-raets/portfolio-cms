@@ -49,7 +49,7 @@ collections:
   - name: "navbarAndFooter"
     label: "Navbar & Footer"
     files:
-      - file: "src/data/pages/navbar/index.md"
+      - file: "src/data/pages/components/navbar/index.md"
         label: "Navbar"
         name: "navbar"
         fields:
@@ -64,13 +64,13 @@ collections:
                   { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
                 ],
             }
-      - file: "src/data/pages/footer/index.md"
+      - file: "src/data/pages/components/footer/index.md"
         label: "Footer"
         name: "footer"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "footer" }
           - { label: "Title", name: "title", widget: "string", required: true}
-      - file: "src/data/pages/header/index.md"
+      - file: "src/data/pages/components/header/index.md"
         label: "Header"
         name: "header"
         fields:
