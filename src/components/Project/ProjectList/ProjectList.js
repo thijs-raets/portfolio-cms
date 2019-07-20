@@ -23,7 +23,6 @@ const ProjectList = (props) => (
                                 role
                                 thumbnail
                                 description
-                                tags
                                 url
                             }
                         }
