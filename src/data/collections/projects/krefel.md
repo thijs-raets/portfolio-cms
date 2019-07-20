@@ -7,7 +7,6 @@ role: back-end and front-end developer
 thumbnail: /img/krefel.png
 description: >-
     As a back-end developer I developed functionality for the return requests, site map, search result sorting and checkout fixes.
-tags: [java, HTML, CSS, javascript, Hybris, Spring]
 url: https://www.krefel.be
 ---
 

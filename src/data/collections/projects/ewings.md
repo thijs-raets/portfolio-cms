@@ -7,7 +7,6 @@ role: back-end and front-end developer
 thumbnail: /img/ewings.png
 description: >-
     Webshops owned their own separate views to the productcockpit and could enrich their data and push basic stock and price information to Bol and Amazon. Once enriched the system did a full product push to Magento. I created the productcockpit customizations and coupling between Amazon,Bol and Magento.
-tags: [java, Hybris, Spring]
 url: https://ewings.be/
 ---
 

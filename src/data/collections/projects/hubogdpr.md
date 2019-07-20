@@ -7,6 +7,5 @@ role: back-end and front-end developer
 thumbnail: /img/hubo-gdpr.png
 description: >-
     Customers could start a request to edit, view, remove, limit processing or trasfer data (also opt-out possiblity). These actions and how they were related to specific data (not all data can be removed) had to be implemented dynamically. I implemented the complete customer flow to issue a request, everything you see as a normal non-admin user.
-tags: [java, HTML, CSS, javascript, Hibernate, Spring Boot]
 url: https://gdpr.hubo.be/
 ---
