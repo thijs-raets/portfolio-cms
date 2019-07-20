@@ -65,21 +65,21 @@ collections:
                 ],
             }
       - file: "src/data/pages/components/header/index.md"
-              label: "Header"
-              name: "header"
+        label: "Header"
+        name: "header"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "header" }
+          - { label: "Title", name: "title", widget: "string", required: true}
+          - { label: "Subtitle", name: "subTitle", widget: "string", required: true}
+          - { label: "Header image",
+              name: "headerImage",
+              widget: "object",
               fields:
-                - { label: "Template Key", name: "templateKey", widget: "hidden", default: "header" }
-                - { label: "Title", name: "title", widget: "string", required: true}
-                - { label: "Subtitle", name: "subTitle", widget: "string", required: true}
-                - { label: "Header image",
-                    name: "headerImage",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Image", name: "image", widget: "image" },
-                        { label: "Image Description", name: "imageAlt", widget: "string" }
-                      ],
-                   }
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" }
+                ],
+             }
       - file: "src/data/pages/components/footer/index.md"
         label: "Footer"
         name: "footer"
