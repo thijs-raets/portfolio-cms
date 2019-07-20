@@ -54,8 +54,7 @@ collections:
         name: "navbar"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "navbar" }
-          - {
-              label: "Menu Items",
+          - { label: "Menu Items",
               name: "menuItems",
               widget: "list",
               fields:
@@ -78,8 +77,7 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "header" }
           - { label: "Title", name: "title", widget: "string", required: true}
           - { label: "Subtitle", name: "subTitle", widget: "string", required: true}
-          - {
-              label: "Header image",
+          - { label: "Header image",
               name: "headerImage",
               widget: "object",
               fields:
