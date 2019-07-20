@@ -1,0 +1,26 @@
+@import "../../../styles/mixins";
+
+.projectList {
+  text-align: center;
+  border-left-width: 70px;
+  border-right-width: 70px;
+  padding-top: 60px;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+
+  @include respond-to("large") {
+    width:90%;
+  }
+
+  &-content {
+    @include respond-to("extrasmall") {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    padding-top: 30px;
+    flex-flow: row wrap;
+    display: grid;
+    grid-gap: 15px;
+  }
+}
+

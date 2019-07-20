@@ -7,13 +7,13 @@ html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   text-size-adjust: 100%;
-  background-color: $background-light;
+  height: 100%;
 }
 
 body {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: $body-dark;
+  "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  height: 100%;
 }
 
 a {
@@ -36,5 +36,47 @@ a {
 }
 
 main {
-  min-height: calc(100vh - #{$navbar-height} - #{$footer-height});
+  min-height: calc(100vh - #{$navbar-height});
+  border-style: solid;
+  border-color: transparent;
+}
+
+#___gatsby {
+  height: 100%;
+  & > div {
+    height: 100%;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.medium-icon {
+  flex-direction: row;
+  height: 80px;
+  width: 80px;
+  @include respond-to("extrasmall") {
+    height: 130px;
+    width: 130px;
+  }
+  @include respond-to("small") {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.small-icon {
+  width: 100px;
+  height: 100px;
 }

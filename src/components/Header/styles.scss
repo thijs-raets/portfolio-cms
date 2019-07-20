@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.header {
+  height: 450px;
+  //background: url('/img/trolltunga-blur-darken.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+
+  @include respond-to("medium") {
+    height: 100%;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include respond-to("small") {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &-image {
+    height: 150px;
+    margin-bottom: 30px;
+
+    @include respond-to("small") {
+      height: 200px;
+      margin-bottom: 0;
+    }
+
+    @include respond-to("medium") {
+      height: 300px;
+    }
+  }
+
+  &-tagline {
+    @include xlarge-font();
+    color: $body-light;
+    width: 400px;
+    text-align: center;
+    cursor: default;
+    position: relative;
+    top: 60px;
+
+    @include respond-to("small") {
+      width: 50%;
+      align-items: flex-start;
+    }
+  }
+
+  &-taglinePart {
+    display: inline;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 4.6rem;
+  }
+}

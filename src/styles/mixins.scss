@@ -1,9 +1,10 @@
 @import "./variables.scss";
 
 $breakpoints: (
-  "small": 767px,
-  "medium": 992px,
-  "large": 1200px,
+        "extrasmall":550px,
+        "small": 760px,
+        "medium": 992px,
+        "large": 1205px,
 ) !default;
 
 @mixin respond-to($breakpoint) {
@@ -15,7 +16,7 @@ $breakpoints: (
     }
   }
 
-  // If the key doesn't exist in the map
+    // If the key doesn't exist in the map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
           + "Available breakpoints are: #{map-keys($breakpoints)}.";
@@ -55,7 +56,6 @@ $breakpoints: (
   line-height: 3rem;
 
   @include respond-to("small") {
-    font-size: 2.25rem;
     letter-spacing: 1.2px;
     line-height: 3.75rem;
   }
