@@ -17,6 +17,7 @@ const TemplateWrapper = ({footerData = null, navbarData = null, headerData = nul
         <Header data={headerData}/>
         <main>{children}</main>
         <Footer data={footerData}/>
+    });
     </>
 );
 
