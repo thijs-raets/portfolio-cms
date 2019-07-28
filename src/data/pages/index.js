@@ -38,11 +38,6 @@ export const HomePageTemplate = ({home}) => {
 
 class HomePage extends React.Component {
     render() {
-        const tagManagerArgs = {
-            gtmId: 'GTM-5V856XD'
-        };
-        TagManager.initialize(tagManagerArgs)
-
         const {data} = this.props;
         const {
             data: {footerData, navbarData, headerData},

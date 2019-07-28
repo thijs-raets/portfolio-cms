@@ -39,6 +39,14 @@ module.exports = {
                 logo: "./src/img/favicon.png",
             },
         },
+        {
+            resolve: "gatsby-plugin-google-tagmanager",
+            options: {
+                id: "GTM-5V856XD",
+                includeInDevelopment: false,
+                defaultDataLayer: {platform: "gatsby"},
+            },
+        },
         "gatsby-plugin-netlify", // make sure to keep it last in the array
     ],
 };
