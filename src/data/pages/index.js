@@ -5,7 +5,6 @@ import Helmet from "react-helmet";
 import Layout from "../../components/Layout";
 import "../../styles/home.scss";
 import ProjectList from "../../components/Project/ProjectList/ProjectList";
-import TagManager from 'react-gtm-module';
 import {FaEnvelope, FaLinkedin} from 'react-icons/fa';
 
 export const HomePageTemplate = ({home}) => {
